@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgb(237, 228, 182);
+            color: #c3b4d1;
+            text-align: left;
+        }
+        .container {
+            max-width: 600px;
+            margin: 200px 410px;
+            padding: 50px;
+            background: #fff;
+            box-shadow: 0 20px 20px rgba(177, 22, 22, 0.551);
+            border-radius: 30px;
+            border : 2px solid rgb(174, 20, 20);
+        }
+        h1 {
+            margin: 15px;
+        }
+        p {
+            text-align: center;
+        }
+        .search-bar {
+            display: flex;
+            margin:40px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 50%;
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        button {
+            padding: 10px 25px;
+            border: 2px solid rgb(219, 199, 199);
+            border-radius: 10px;
+            background: #007bff;
+            color: #ecf1eb;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #00050b;
+        }     
+        .weather-info {
+            margin-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Weather Application</h1>
+        <p>Check the present weather condition of a selected location...!!!</p>
+
+        <div class="search-bar">
+            <input type="text" id="location" placeholder="Enter a location...">
+            <button onclick="fetchWeather()">Search</button>
+        </div>
+
+        <div class="weather-info" id="weather-info"></div>
+    </div>
+</body>
+</html>
